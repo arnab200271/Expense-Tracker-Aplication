@@ -97,7 +97,7 @@ export default function Home() {
       <Coinanimation/>
       <button
         onClick={() => setDarkmode(!darkmode)}
-        className={`absolute top-6 right-6 z-[9999] p-3 rounded-full shadow-md transition duration-500 ${
+        className={`absolute top-1 right-4 z-[9999] p-3 rounded-full shadow-md transition duration-500 ${
           darkmode
             ? "bg-yellow-400 text-gray-900 hover:bg-yellow-300"
             : "bg-gray-800 text-white hover:bg-gray-700"

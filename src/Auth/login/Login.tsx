@@ -232,7 +232,7 @@ const Login: React.FC<LoginProps> = ({ onBackclick, darkMode }) => {
               <button
                 type="submit"
                 disabled={submitting}
-                className={`w-full py-2 px-4 rounded-md font-bold cursor-pointer transition flex items-center justify-center gap-2
+                className={` lg:w-full  md:w-full w-64 sm-w-1/2 py-2 px-4 rounded-md font-bold cursor-pointer transition flex items-center justify-center gap-2
     ${
       darkMode
         ? "bg-white text-gray-900 border border-white"
@@ -242,7 +242,7 @@ const Login: React.FC<LoginProps> = ({ onBackclick, darkMode }) => {
               >
                 {submitting && (
                   <div
-                    className={`w-5 h-5 border-4  border-t-transparent rounded-full animate-spin ${
+                    className={`  w-5 sm-w-1/2 h-5 border-4  border-t-transparent rounded-full animate-spin ${
                       darkMode ? "border-gray-800" : " border-white"
                     }`}
                   ></div>
@@ -250,7 +250,7 @@ const Login: React.FC<LoginProps> = ({ onBackclick, darkMode }) => {
                 {submitting ? "Logging in..." : "Login"}
               </button>
             </form>
-            <Link href="/forgetpassword" className="text-white">
+            <Link href="/forgetpassword" className="text-white ms-3">
               Forget Password
             </Link>
           </div>
